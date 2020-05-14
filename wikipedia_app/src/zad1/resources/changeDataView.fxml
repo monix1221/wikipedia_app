@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<DialogPane fx:id="changeDataDialogPane" headerText="Change current data" prefHeight="200.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <content>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="351.0">
+               <children>
+                  <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="337.0" text="Provide data in English">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="131.0" prefWidth="338.0">
+                     <children>
+                        <VBox prefHeight="99.0" prefWidth="95.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="50.0" text="Country:" />
+                              <Label prefHeight="40.0" prefWidth="50.0" text="City:" />
+                              <Label prefHeight="40.0" prefWidth="100.0" text="Currency" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="78.0" prefWidth="245.0">
+                           <children>
+                              <TextField fx:id="countryTextField" text="Poland" />
+                              <TextField fx:id="cityTextField" text="Warsaw" />
+                              <TextField fx:id="currencyTextField" text="USD" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="81.0" prefWidth="338.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="CANCEL" />
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+</DialogPane>
