@@ -8,7 +8,7 @@ import java.net.URL;
 public class WeatherService extends HttpService {
 
     private static final String WEATHER_URL_PREFIX = "http://api.openweathermap.org/data/2.5/weather?q=";
-    private static final String API_KEY = "a2e8f3a0488602beebf3ff9e5ea323df";
+    private static final String API_KEY = "";
     private static final String WEATHER_URL_SUFFIX = "&APPID=" + API_KEY;
     private static final String EMPTY_STR = "";
     private static final String COMMA = ",";
